@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MovieMania</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--navbar as header -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">MovieMania.tv</a>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#bollywood">Bollywood</a></li>
+              <li><a href="#bollywood-hits">Bollywood Hits</a></li>
+              <li><a href="#hollywood">Hollywood</a></li>
+              <li><a href="#hollywood-hits">Hollywood Hits</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tv Series <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#hindi-series">Hindi</a></li>
+                  <li><a href="#english-series">English</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="movie, Tv-series name">
+              </div>
+              <button type="submit" class="btn btn-info">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav> 
+
+    <!-- blockbuster bollywood movies section -->
+    <div id="bollywood" class="container-fluid">
+      <h1>Bollywood Blockbuster Movies</h1>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+          <li data-target="#myCarousel" data-slide-to="7"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: ₹2,000 crore(US$290 million)</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/bollybuster/dangal.jpg" alt="Dangal">
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: ₹1,725 crore(US$270 million)</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/bollybuster/bahubali2.jpg" alt="Baahubali 2: The Conclusion"> 
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: ₹792 crore(US$120 million)</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/bollybuster/pk.jpg" alt="PK">
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: ₹650 crore(US$100 million)</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/bollybuster/bahubali1.jpg" alt="Baahubali: The Beginning">  
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: ₹626 crore(US$97 million)</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/bollybuster/bajrangi.jpg" alt="Bajrangi Bhaijaan">  
+          </div>
+          <div class="item">
+            <div class="carousel-caption"> 
+              <h3>Worldwide Collection: ₹585 crore(US$91 million)</h3>
+            </div> 
+            <img class="img img-rounded" class="img-responsive" src="img/bollybuster/dhoom3.jpg" alt="Dhoom 3">
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: ₹584 crore(US$91 million)</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/bollybuster/sultan.jpg" alt="Sultan">  
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: ₹477 crore(US$74 million)</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/bollybuster/kabali.jpg" alt="Kabali">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Bollywood all time hit section -->
+    <div id="bollywood-hits" class="container-fluid">
+      <div class="row">
+        <h1>Bollywood All Time Hits</h1>
+        <div class="col-sm-6 col-md-2">
+          <div class="thumbnail">
+            <img src="img/bollywoodFav/gangsofwassay.jpg" class="img-responsive" alt="Gangs of Wasseypur">
+            <div class="caption">
+              <h3>Gangs of Wasseypur (2012)</h3>
+              <p>A clash between Sultan and Shahid Khan leads to the expulsion of Khan from Wasseypur, and ignites a deadly blood feud spanning three generations.Inspired by the real-life exploits of local gangs.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Watch online</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">Download</a> <a href="#" class="btn btn-default" role="button">Dislike</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-2">
+          <div class="thumbnail">
+            <img src="img/bollywoodFav/rangde.jpg" class="img-responsive" alt="Rang De Basanti">
+            <div class="caption">
+              <h3>Rang De Basanti (2006)</h3>
+              <p>This story is about six friends who help an English filmmaker create a documentary about Indian freedom struggle. During filming, these friends learn about those before them and the importance of fighting for their rights with absolute zeal.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Watch online</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">Download</a> <a href="#" class="btn btn-default" role="button">Dislike</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-2">
+          <div class="thumbnail">
+            <img src="img/bollywoodFav/awednesday.jpg" class="img-responsive" alt="A Wednesday">
+            <div class="caption">
+              <h3>A Wednesday (2008)</h3>
+              <p>A retiring police officer reminisces about the most astounding day of his career. About a case that was never filed but continues to haunt him in his memories - the case of a man and a Wednesday.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Watch online</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">Download</a> <a href="#" class="btn btn-default" role="button">Dislike</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-2">
+          <div class="thumbnail">
+            <img src="img/bollywoodFav/anand.jpg" class="img-responsive" alt="Anand">
+            <div class="caption">
+              <h3>Anand (1971)</h3>
+              <p>A melodramatic tale of a man with a terminal disease. The story begins with Dr Bhaksar winning a literary prize for his book about a patient called Anand. The story of a terminally ill man who wishes to live life to the full before the inevitable occurs.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Watch online</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">Download</a> <a href="#" class="btn btn-default" role="button">Dislike</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-2">
+          <div class="thumbnail">
+            <img src="img/bollywoodFav/udaan.jpg" class="img-responsive" alt="Udaan">
+            <div class="caption">
+              <h3>Udaan (2010)</h3>
+              <p>Expelled from his school, a 16-year old boy returns home to his abusive and oppressive father. After being abandoned for eight straight years in boarding school, Rohan returns to the small industrial town of Jamshedpur and finds himself closeted.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Watch online</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">Download</a> <a href="#" class="btn btn-default" role="button">Dislike</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-2">
+          <div class="thumbnail">
+            <img src="img/bollywoodFav/lagaan.jpg" class="img-responsive" alt="Lagaan: Once Upon a Time in India">
+            <div class="caption">
+              <h3>Lagaan: Once Upon a Time in India (2001)</h3>
+              <p>Set in India in the late 1800s, the local British rulers are imposing excessively high taxes on the local population. One of the local villagers has a run-in with the senior British officer.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Watch online</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">Download</a> <a href="#" class="btn btn-default" role="button">Dislike</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- blockbuster hollywood movies section -->
+    <div id="hollywood" class="container-fluid">
+      <h1>Hollywood Blockbuster Movies</h1>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+          <li data-target="#myCarousel" data-slide-to="7"></li>
+          <li data-target="#myCarousel" data-slide-to="8"></li>
+          <li data-target="#myCarousel" data-slide-to="9"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: $2,788.0 million</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/hollybuster/avatar.jpg" alt="Avatar" height="auto">
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: $2,186.8 million</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/hollybuster/titanic.jpg" alt="Titanic"> 
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: $2,068.2 million</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/hollybuster/starwar.jpg" alt="Star Wars: The Force Awakens">  
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: $1,671.7 million</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/hollybuster/jurasic.jpg" alt="Jurassic World"> 
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: $1,518.8 million</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/hollybuster/avengers.jpg" alt="Marvel's The Avengers">
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: $1,516.0 million</h3>
+            </div>   
+            <img class="img img-rounded" class="img-responsive" src="img/hollybuster/furious7.jpg" alt="Furious 7">
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+             <h3>Worldwide Collection: $1,405.4 million</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/hollybuster/avengers_age.jpg" alt="Avengers: Age of Ultron">   
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: $1,341.5 million</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/hollybuster/harry.jpg" alt="Harry Potter and the Deathly Hallows Part 2">  
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: $1,276.5 million</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/hollybuster/frozen.jpg" alt="Frozen"> 
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <h3>Worldwide Collection: $1,262.5 million</h3>
+            </div>
+            <img class="img img-rounded" class="img-responsive" src="img/hollybuster/beautyandbeast.jpg" alt="Beauty and the Beast (2017)">
+          </div>         
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hollywood all time hit section -->
+    <div id="hollywood-hits" class="container-fluid">
+      <div class="row">
+        <h1>Hollywood All Time Hits</h1>
+        <div class="col-sm-6 col-md-2">
+          <div class="thumbnail">
+            <img src="img/hollywoodFav/projectx.jpg" class="img-responsive" alt="Project X">
+            <div class="caption">
+              <h3>Project X (2012)</h3>
+              <p>3 high school seniors throw a birthday party to make a name for themselves. As the night progresses, things spiral out of control as word of the party spreads. you can be sure that this party is going to get really out of hand really fast.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Watch online</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">Download</a> <a href="#" class="btn btn-default" role="button">Dislike</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <div class="thumbnail">
+            <img src="img/hollywoodFav/thewarrior.jpg" class="img-responsive" alt="The Warriors">
+            <div class="caption">
+              <h3>The Warriors (1979)</h3>
+              <p>In the near future, a charismatic leader summons the street gangs of New York City in a bid to take it over. When he is killed, The Warriors are falsely blamed and must fight their way.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Watch online</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">Download</a> <a href="#" class="btn btn-default" role="button">Dislike</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-2">
+          <div class="thumbnail">
+            <img src="img/hollywoodFav/rolemodel.jpg" class="img-responsive" alt="Role Models">
+            <div class="caption">
+              <h3>Role Models (2008)</h3>
+              <p>Wild behavior forces a pair of energy drink reps to enroll in a Big Brother program. Danny Donahue (Paul Rudd) and Wheeler (Sean William Scott) are two Los Angeles salesmen for an energy drink.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Watch online</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">Download</a> <a href="#" class="btn btn-default" role="button">Dislike</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-2">
+          <div class="thumbnail">
+            <img src="img/hollywoodFav/hobbit.jpg" class="img-responsive" alt="The Hobbit: An Unexpected Journey">
+            <div class="caption">
+              <h3>The Hobbit: An Unexpected Journey (2012)</h3>
+              <p>A reluctant hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Watch online</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">Download</a> <a href="#" class="btn btn-default" role="button">Dislike</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-2">
+          <div class="thumbnail">
+            <img src="img/hollywoodFav/getrich.jpg" class="img-responsive" alt="Get Rich or Die Tryin'">
+            <div class="caption">
+              <h3>Get Rich or Die Tryin' (2005)</h3>
+              <p>A tale of an inner city drug dealer who turns away from crime to pursue his passion, rap music. Passion is bigger than anyhting, this movie set the real example of passion in anyone life.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Watch online</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">Download</a> <a href="#" class="btn btn-default" role="button">Dislike</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-2">
+          <div class="thumbnail">
+            <img src="img/hollywoodFav/blow.jpg" class="img-responsive" alt="Blow">
+            <div class="caption">
+              <h3>Blow (2001)</h3>
+              <p>The story of George Jung, along with the Medellín Cartel, headed by Pablo Escobar established the American cocaine market in the 1970s in the United States. he gets rich by bringing cocaine to America and soon pays the price.</p>
+              <p><a href="#" class="btn btn-primary" role="button">Watch online</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">Download</a> <a href="#" class="btn btn-default" role="button">Dislike</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- hindi series section -->
+    <div id="hindi-series" class="container-fluid">
+      <h1>Hindi Tv Series</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3> Malgudi Days</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aEjfHV0YbII" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3> Mahabharat</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/y_nectTheLQ?list=PLtaXzx-VKKfF-BCfR4xhJHu4YmuPVKkMf" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3> P.O.W. Bandi Yuddh Ke</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZwQJMat_KjA" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3> TVF Pitchers</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vHWiIV1E2yA" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3> Kuch Rang Pyar Ke Aise Bhi</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GKhnkJD7bys" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3> Chanakya</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fHGDEffRjE8?list=PL14A74E6328E202AA" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- english series section -->
+    <div id="english-series" class="container-fluid">
+      <h1>English Tv Series</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3> Game of Thrones</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/giYeaKsXnsI" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3> Ozark</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5hAXVqrljbs" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3> Rick and Morty</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Bmg2vXOQ3kM" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3> Suits</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7tUjQICfJEk" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3> The Walking Dead</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5Ow-nxswazg" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3> Orange Is the New Black</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NzJATbm8U98" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="col-sm-3">
+          <p>Disclaimer: Moviemania.tv is absolutely legal and contain only links to other sites on the Internet : (dailymotion.com, peteava.ro, 2shared.com, 4shared.com, uploaded.net, youku.com, youtube.com and many others..) We do not host or upload any video, films, media files (avi, mov, flv, mpg, mpeg, divx, dvd rip, mp3, mp4, torrent, ipod, psp), Moviemania.tv is not responsible for the accuracy, compliance, copyright, legality, decency, or any other aspect of the content of other linked sites.</p>
+        </div>
+        <div class="col-sm-3">
+          <ul>
+            <li><h2>MovieMania.tv</h2></li>
+            <li><a href="https://xmovies8.ru/movies/upcoming">Movies Coming Soon</a></li>
+            <li><a href="https://xmovies8.ru/news">Movies News</a></li>
+            <li><a href="https://xmovies8.ru/page/dmca">DMCA</a></li>
+            <li><a href="https://xmovies8.ru/page/advertising">Advertising</a></li>
+            <li><a href="https://xmovies8.ru/request">Movies Request</a></li>
+            <li><a href="https://xmovies8.ru/faq">FAQs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <ul>
+            <li><h2>Full Movies</h2></li>
+            <li><a href="#">United States</a></li>
+            <li><a href="#">France</a></li>
+            <li><a href="#">Japan</a></li>
+            <li><a href="#">India</a></li>
+            <li><a href="#">United Kingdom</a></li>
+            <li><a href="#">Germany</a></li>
+            <li><a href="#">South Korea</a>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <ul class="social-icons">
+            <li><h2>Follow us on</h2><li>
+            <li><img src="img/logo/fb_logo.png"></li>
+            <li><img src="img/logo/insta.jpeg"></li>
+            <li><img src="img/logo/linkedin.png"></li>
+            <li><img src="img/logo/twitter.jpeg"></li>
+            <li>Copyright © 2017. All Rights Reserved</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

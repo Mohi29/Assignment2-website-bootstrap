@@ -1,0 +1,104 @@
+body {
+	position: relative; 
+}
+
+#bollywood,#hollywood {
+	padding:50px;
+	height:auto;
+	color: #fff;
+	background-color: #ff9800;
+}
+
+#bollywood-hits,#hollywood-hits {
+	padding:50px;
+	height:auto;
+	color: #fff;
+	background-color: #673ab7;
+}
+
+#hindi-series {
+	padding:50px;
+	height:auto;
+	color: darkblue ;
+	background-color: #00bcd4;
+}
+
+#english-series {
+	padding:50px;
+	height:auto;
+	color: darkred; 
+	background-color: #009688;
+}
+
+@media only screen and (max-width: 500px) {
+	#hollywood,#bollywood {
+		background-color: lightblue;
+	}
+}
+
+#bollywood-hits h1,#hollywood-hits h1{
+	padding-bottom: 10px;
+	padding-top: 8px;
+	margin-left: 15px;
+	margin-right: 15px;
+	outline-style: outset;
+	text-align: center;
+	text-shadow: 2px 1px red;
+}
+
+#hollywood h1,#bollywood h1 {
+	color: red; 
+	text-align: center;
+	text-shadow: 3px 2px blue;
+}
+
+#hollywood h3,#bollywood h3 {
+	color: white; 
+	text-align: center;
+	font-size: 50px;
+	text-shadow: 3px 2px green;
+}
+
+footer {
+	margin-bottom:10px;
+	background-color: black;
+}
+
+footer p {
+	padding:10px;
+	color: #999;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li h2 {
+	border-bottom: 1px dashed #3c3c3c;
+}
+
+footer ul li {
+	color: red;
+}
+
+footer .social-icons ul {
+	text-align: inline;
+}
+
+footer img {
+	padding: 5px;
+	width: 60px;
+	height: 60px;
+}
+
+footer img:hover{
+	opacity: .7;
+}
+
+footer .col-sm-3 .social-icons li {
+	display: inline;
+}
+
+footer ul li a {
+	color: #ccc;
+}
